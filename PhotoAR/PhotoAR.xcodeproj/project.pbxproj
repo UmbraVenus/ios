@@ -16,6 +16,7 @@
 		3064696A26AB767B00975DE0 /* PhotoARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3064696926AB767B00975DE0 /* PhotoARTests.swift */; };
 		3064697526AB767B00975DE0 /* PhotoARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3064697426AB767B00975DE0 /* PhotoARUITests.swift */; };
 		3064698326AB772F00975DE0 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3064698226AB772F00975DE0 /* Grid.swift */; };
+		3064698526AD1EE000975DE0 /* SelectImageVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3064698426AD1EE000975DE0 /* SelectImageVCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3064697426AB767B00975DE0 /* PhotoARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoARUITests.swift; sourceTree = "<group>"; };
 		3064697626AB767B00975DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3064698226AB772F00975DE0 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		3064698426AD1EE000975DE0 /* SelectImageVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageVCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				3064695D26AB767B00975DE0 /* LaunchScreen.storyboard */,
 				3064696026AB767B00975DE0 /* Info.plist */,
 				3064698226AB772F00975DE0 /* Grid.swift */,
+				3064698426AD1EE000975DE0 /* SelectImageVCViewController.swift */,
 			);
 			path = PhotoAR;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				3064695526AB767800975DE0 /* ViewController.swift in Sources */,
 				3064695326AB767800975DE0 /* AppDelegate.swift in Sources */,
+				3064698526AD1EE000975DE0 /* SelectImageVCViewController.swift in Sources */,
 				3064695726AB767800975DE0 /* Experience.rcproject in Sources */,
 				3064698326AB772F00975DE0 /* Grid.swift in Sources */,
 			);

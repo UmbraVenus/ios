@@ -13,6 +13,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     var grids = [Grid]()
+    /// This is the image that will show in the AR. We set this variable during the segue from the "SelectImageVC" to this view controller.
+    var image: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +34,16 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
         sceneView.addGestureRecognizer(gestureRecognizer)
+        
+        let closeButton = UIButton(frame: CGRect(x: 25, y: 25, width: 50, height: 50))
+        closeButton.setTitle("Close", for: .normal)
+        closeButton.addTarget(self, action: #selector(closeBtnPressed), for: .touchUpInside)
+        self.view.addSubview(closeButton)
     }
+    
+    @objc func closeBtnPressed(sender: UIButton!) {
+            self.dismiss(animated: true, completion: nil)
+        }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -121,7 +132,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // 1.
         let planeGeometry = SCNPlane(width: 0.2, height: 0.35)
         let material = SCNMaterial()
-        material.diffuse.contents = UIImage(named: "mona-lisa")
+        material.diffuse.contents = self.image
         planeGeometry.materials = [material]
         
         // 2.
